@@ -36,7 +36,7 @@ const ITEMS = [
 
 export default function SelectedWork() {
   return (
-    <section id="trabajo" className="bg-bg py-20 md:py-28">
+    <section id="trabajo" className="py-20 md:py-28">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
         <motion.div {...fadeUp} className="mb-14 flex items-end justify-between flex-wrap gap-6">
           <div>

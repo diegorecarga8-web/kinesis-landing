@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AnimatedBackground from "./components/AnimatedBackground";
 import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+      <AnimatedBackground />
       {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
       <Navbar />
       <main>

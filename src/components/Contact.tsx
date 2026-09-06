@@ -13,7 +13,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <footer id="contacto" className="bg-bg pt-20 md:pt-28 pb-8 md:pb-12 overflow-hidden border-t border-stroke">
+    <footer id="contacto" className="pt-20 md:pt-28 pb-8 md:pb-12 overflow-hidden border-t border-stroke">
       <div className="overflow-hidden mb-20 md:mb-28">
         <div ref={marqueeRef} className="flex whitespace-nowrap w-max">
           {Array.from({ length: 6 }).map((_, i) => (

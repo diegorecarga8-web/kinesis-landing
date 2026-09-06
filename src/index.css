@@ -62,6 +62,17 @@ body {
   animation: gradient-shift 6s ease infinite;
 }
 
+@keyframes float-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(70px, 50px) scale(1.12); }
+}
+@keyframes float-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-60px, -70px) scale(1.08); }
+}
+.animate-float-a { animation: float-a 22s ease-in-out infinite; }
+.animate-float-b { animation: float-b 26s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

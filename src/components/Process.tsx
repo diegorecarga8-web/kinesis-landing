@@ -27,7 +27,7 @@ const fadeUp = {
 
 export default function Process() {
   return (
-    <section id="proceso" className="bg-bg py-20 md:py-28">
+    <section id="proceso" className="py-20 md:py-28">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
         <motion.div {...fadeUp} className="mb-14">
           <div className="flex items-center gap-3 mb-4">
