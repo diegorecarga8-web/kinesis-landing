@@ -44,7 +44,7 @@ export default function Process() {
             <motion.div
               key={step.n}
               {...fadeUp}
-              className="flex items-center gap-6 p-6 rounded-[28px] bg-surface/30 hover:bg-surface border border-stroke transition-colors"
+              className="flex items-center gap-6 p-6 rounded-[28px] glass-card"
             >
               <span className="text-4xl font-display italic text-transparent bg-clip-text accent-gradient shrink-0">
                 {step.n}

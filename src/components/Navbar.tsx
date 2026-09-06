@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 md:pt-6 px-4">
       <div
-        className={`inline-flex items-center rounded-full backdrop-blur-md border border-white/10 bg-surface px-2 py-2 transition-shadow ${
+        className={`inline-flex items-center rounded-full backdrop-blur-xl border border-white/10 bg-white/[0.06] px-2 py-2 transition-shadow ${
           scrolled ? "shadow-md shadow-black/20" : ""
         }`}
       >

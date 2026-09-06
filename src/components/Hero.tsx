@@ -25,10 +25,6 @@ export default function Hero() {
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 -z-10" style={{
-        background: "radial-gradient(circle at 75% 45%, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 60%)",
-      }} />
-
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center pt-24 md:pt-0">
         <div>
           <p className="blur-in text-xs text-muted tracking-[0.3em] mb-8">Estudio de software</p>

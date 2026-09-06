@@ -62,7 +62,7 @@ export default function SelectedWork() {
             <motion.div
               key={item.title}
               {...fadeUp}
-              className={`${item.span} group relative overflow-hidden rounded-3xl border border-stroke bg-surface p-8 md:p-10 min-h-[220px] flex flex-col justify-end`}
+              className={`${item.span} group relative overflow-hidden rounded-3xl glass-card p-8 md:p-10 min-h-[220px] flex flex-col justify-end`}
             >
               <div
                 className="absolute inset-0 opacity-[0.15] pointer-events-none"

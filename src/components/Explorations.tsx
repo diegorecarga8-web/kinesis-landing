@@ -37,14 +37,14 @@ function Column({ items, direction }: { items: typeof LEFT_COL; direction: 1 | -
   }, [direction]);
 
   return (
-    <div ref={ref} className="flex flex-col gap-6">
+    <div ref={ref} className="flex flex-col gap-3 sm:gap-6">
       {items.map((item) => (
         <div
           key={item.title}
-          className="aspect-square max-w-[280px] rounded-3xl border border-stroke bg-surface p-6 flex flex-col justify-end"
+          className="aspect-square max-w-[40vw] sm:max-w-[220px] md:max-w-[280px] rounded-3xl glass-card p-4 sm:p-6 flex flex-col justify-end"
         >
-          <h4 className="font-display italic text-xl text-text-primary mb-2">{item.title}</h4>
-          <p className="text-sm text-muted">{item.desc}</p>
+          <h4 className="font-display italic text-sm sm:text-lg md:text-xl text-text-primary mb-1 sm:mb-2">{item.title}</h4>
+          <p className="hidden sm:block text-sm text-muted">{item.desc}</p>
         </div>
       ))}
     </div>
@@ -84,7 +84,7 @@ export default function Explorations() {
       </div>
 
       <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
-        <div className="grid grid-cols-2 gap-10 md:gap-24 max-w-[900px] w-full px-6">
+        <div className="grid grid-cols-2 gap-3 sm:gap-10 md:gap-24 max-w-[900px] w-full px-4 sm:px-6">
           <Column items={LEFT_COL} direction={-1} />
           <Column items={RIGHT_COL} direction={1} />
         </div>
